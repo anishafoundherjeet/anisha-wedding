@@ -1,0 +1,24 @@
+RUN THIS INVITATION ON ANOTHER COMPUTER
+
+1. Install Node.js with npm if it is not already installed.
+2. Extract this ZIP fully.
+3. Open Terminal (macOS/Linux) or PowerShell (Windows) in the extracted anisha-wedding folder containing package.json.
+4. Run: npm start
+5. Open http://127.0.0.1:5173 in your browser.
+6. Keep the terminal running. Press Ctrl+C to stop.
+
+No npm install is needed: this project has no package dependencies.
+Run one invitation at a time with npm start, or use a different port for the second.
+To run this project on port 5174 (works on macOS, Linux and Windows):
+node -e "process.env.PORT='5174'; require('./scripts/serve.cjs')"
+Then open http://127.0.0.1:5174.
+
+To create deployment files: npm run build
+This creates dist/. To preview that build: npm run preview
+The ZIP includes all source files, assets, and its own GitHub Pages workflow.
+The rebuildable dist/ folder is omitted to keep the archive smaller.
+See README.md for deployment instructions.
+
+Internet access is needed for Google Fonts, Google Maps and Google Calendar.
+Local preview URLs work only on the computer running the server. For guests to
+open the invitation on their phones, deploy it and share its public HTTPS URL.
